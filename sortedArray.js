@@ -1,5 +1,3 @@
-
-
 let array1 = [1, 2, 3, 4, 5, 14];
 let array2 = [9, 10, 11, 15, 16];
 
@@ -16,8 +14,8 @@ function swap(arr, left, right) {
 
 function partition(arr, left, right) {
   var pivot = arr[Math.floor((right + left) / 2)],
-    i = left,
-    j = right;
+    i = left;
+  j = right;
   while (i <= j) {
     while (arr[i] < pivot) {
       i++;
